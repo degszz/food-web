@@ -37,7 +37,7 @@ const array = [
   },
 
 ]
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"  
 import {
   Tooltip,
   TooltipContent,
@@ -50,18 +50,18 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col w-full  items-center h-full">
-        <div className="">
+        <div className="max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px]">
           <Carousel
             opts={{
-              align: "start",
-            }}
-            className="w-full p-[10px]"
+              align: "start",  
+            }} 
+            className="w-full pt-[10px]"
           >
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="basis-1/2 lg:basis-1/4 md:max-w-[297px] ">
+                <CarouselItem key={index} className="basis-/1 lg:basis-1/3 xl:basis-1/4 ">
                   <div className="">
-                    <Card className="min-h-[70px] ">
+                    <Card className="shadow-none min-h-[70px] border-none md:max-w-[297px] ">
                       <CardContent className="h-full w-full flex p-0 ">
 
                         <div className="w-full  min-h-[70px]">
@@ -77,20 +77,21 @@ export default function Home() {
                             <TooltipProvider>
                               <Tooltip>
                                 <TooltipTrigger asChild>
-                                  <button className="hover:bg-eat-400 hover:border-none  rounded-full border mx-[3px]">
+                                  <button className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800  rounded-full border mx-[3px]">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full  icon icon-tabler icons-tabler-outline icon-tabler-caret-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 10l6 6l6 -6h-12" /></svg>
                                   </button>
                                 </TooltipTrigger>
                                 <TooltipContent className="fixed top-10 min-w-[100px]">
                                   <div>
-                                    <span>hola como va mi nombre es</span>
+                                    <span className="text-md underline"><b>Receta:</b></span>
+                                    <span className="text-sm"></span>
                                     <Separator />
-                                    <span>hola como va mi nombre es</span>
+                                    <span className="text-sm"></span>
                                   </div>
                                 </TooltipContent>
                               </Tooltip>
                             </TooltipProvider>
-                            <button className="hover:bg-eat-400 hover:border-none  rounded-full border mx-[3px]">
+                            <button className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800  rounded-full border mx-[3px]">
                               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full icon icon-tabler icons-tabler-outline icon-tabler-zoom-in"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M7 10l6 0" /><path d="M10 7l0 6" /><path d="M21 21l-6 -6" /></svg>
                             </button>
 

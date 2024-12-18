@@ -22,10 +22,10 @@ import Link from "next/link"
 
 export function AppSidebar() {
     return (
-        <Sidebar className="mt-[50px] lg:mt-[60px]">
-            <SidebarContent className="bg-eat-400 text-white">
+        <Sidebar className="mt-[50px] lg:mt-[60px] border-eat-300 ">
+            <SidebarContent className="bg-eat-800 text-eat-200 ">
                 <SidebarGroup >
-                    <SidebarGroupLabel className="text-white text-md "><b>Web de Comida:</b></SidebarGroupLabel>
+                    <SidebarGroupLabel className="text-eat-200 text-md "><b>Web de Comida:</b></SidebarGroupLabel>
                     <SidebarGroupContent >
                         <SidebarMenu>
                             <Collapsible defaultOpen className="group/collapsible ">

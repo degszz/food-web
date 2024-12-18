@@ -1,0 +1,9 @@
+{
+    "editor.multiCursorPaste": "spread",
+    "editor.overtypeCursorStyle": "line",
+    "editor.cursorBlinking": "expand",
+    "editor.hideCursorInOverviewRuler": false,
+    "editor.multiCursorMergeOverlapping": true,
+    "editor.cursorStyle": "line",
+    "editor.cursorSmoothCaretAnimation": "off"
+}

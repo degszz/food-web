@@ -24,7 +24,7 @@ export default function RootLayout({
         <div className="mt-[50px] lg:mt-[60px]">
           <SidebarProvider>
             <AppSidebar />
-            <SidebarTrigger className="hidden md:block lg:block fixed  lg:top-4 md:top-3 left-5 z-50 hover:bg-transparent text-eat-900 hover:text-white " />
+            <SidebarTrigger className="hidden md:block lg:block fixed  lg:top-4 md:top-3 left-5 z-50 hover:bg-transparent text-eat-200 hover:text-white " />
 
             <main className="w-full h-full">
               {children}

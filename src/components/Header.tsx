@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <>
             <header
-                className="bg-eat-300 z-50  fixed top-0 text-white border-b  h-[50px] lg:h-[60px] w-full"
+                className="bg-eat-800 z-50  fixed top-0 text-white border-b border-eat-300  h-[50px] lg:h-[60px] w-full"
             >
                 <div className="w-full flex items-center justify-between h-full">
 
@@ -28,7 +28,7 @@ export default function Header() {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
                                     </button>
                                 </SheetTrigger>
-                                <SheetContent className=" bg-black text-white  w-full h-[70vh]" side={side}>
+                                <SheetContent className=" bg-eat-800 text-white  w-full h-[70vh]" side={side}>
                                     <SheetHeader >
                                         <SheetTitle className="text-white">MENU</SheetTitle>
                                         <SheetDescription className="text-white">
@@ -59,11 +59,12 @@ export default function Header() {
                     </div>
 
                     <div className="w-full  basis-3/3 lg:w-full ">
+
                     </div>
 
                     <div
-                        className="flex basis-1/3  items-center justify-around  text-center h-full"
-                    >
+                        className="flex basis-1/3  items-center justify-around  text-center h-full">
+
                     </div>
                 </div>
             </header>
