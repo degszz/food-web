@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/SideBar"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Caarousel from "@/components/Carousel"
 
 
 export const metadata: Metadata = {
@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="bg-eat-100">
-        <Header />
-        <div className="mt-[50px] lg:mt-[60px]">
-          <SidebarProvider>
+        <div className="mt-[50px] lg:mt-[60px] ">
+          <SidebarProvider >
+            <Header />
             <AppSidebar />
-            <SidebarTrigger className="hidden md:block lg:block fixed  lg:top-4 md:top-3 left-5 z-50 hover:bg-transparent text-eat-200 hover:text-white " />
 
             <main className="w-full h-full">
+            <Caarousel />
               {children}
               <Footer />
             </main>

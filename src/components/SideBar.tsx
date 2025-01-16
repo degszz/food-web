@@ -22,90 +22,69 @@ import Link from "next/link"
 
 export function AppSidebar() {
     return (
-        <Sidebar className="mt-[50px] lg:mt-[60px] border-eat-300 ">
-            <SidebarContent className="bg-eat-800 text-eat-200 ">
+        <Sidebar className="hidden md:block lg:block z-40 text-eat-200">
+            <SidebarHeader className="h-[50px] lg:h-[60px]"/>
+            <SidebarContent className="bg-eat-800">
                 <SidebarGroup >
-                    <SidebarGroupLabel className="text-eat-200 text-md "><b>Web de Comida:</b></SidebarGroupLabel>
-                    <SidebarGroupContent >
+                    <SidebarGroupLabel className="text-eat-200">Web Empresarial</SidebarGroupLabel>
+                    <SidebarGroupContent>
                         <SidebarMenu>
-                            <Collapsible defaultOpen className="group/collapsible ">
+                            <Collapsible defaultOpen className="group/collapsible">
                                 <SidebarMenuItem>
                                     <CollapsibleTrigger asChild>
                                         <SidebarMenuButton >
-                                            Menu
+                                            Dashboard
                                             <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
                                         </SidebarMenuButton >
                                     </CollapsibleTrigger>
                                     <CollapsibleContent>
                                         <SidebarMenuSub>
                                             <SidebarMenuSubItem>
-                                                <Link href="/">Inicio</Link>
+                                                <Link href="/">Home</Link>
                                             </SidebarMenuSubItem>
-
                                             <SidebarMenuSubItem>
-                                                <Link href="/info">Informacion</Link>
+                                                <Link href="/contact">Contact</Link>
+                                            </SidebarMenuSubItem>
+                                            <SidebarMenuSubItem>
+                                                <Link href="/grafics">Grafics</Link>
                                             </SidebarMenuSubItem>
                                         </SidebarMenuSub>
                                     </CollapsibleContent>
                                 </SidebarMenuItem>
                             </Collapsible>
                         </SidebarMenu>
-
-                        <SidebarMenu>
-                            <Collapsible className="group/collapsible">
-                                <SidebarMenuItem>
-                                    <CollapsibleTrigger asChild>
-                                        <SidebarMenuButton >
-                                            Productos
-                                            <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                                        </SidebarMenuButton >
-                                    </CollapsibleTrigger>
-                                    <CollapsibleContent>
-                                        <SidebarMenuSub>
-                                            <SidebarMenuSubItem>
-                                                <Link href="/">Alta Cocina</Link>
-                                            </SidebarMenuSubItem>
-
-                                            <SidebarMenuSubItem>
-                                                <Link href="/">Cocina Tradicional</Link>
-                                            </SidebarMenuSubItem>
-
-                                            <SidebarMenuSubItem>
-                                                <Link href="/">Pasteleria</Link>
-                                            </SidebarMenuSubItem>
-                                        </SidebarMenuSub>
-                                    </CollapsibleContent>
-                                </SidebarMenuItem>
-                            </Collapsible>
-                        </SidebarMenu>
-
-                        <SidebarMenu>
-                            <Collapsible className="group/collapsible">
-                                <SidebarMenuItem>
-                                    <CollapsibleTrigger asChild>
-                                        <SidebarMenuButton >
-                                            Ayuda
-                                            <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                                        </SidebarMenuButton >
-                                    </CollapsibleTrigger>
-                                    <CollapsibleContent>
-                                        <SidebarMenuSub>
-                                            <SidebarMenuSubItem>
-                                                <Link href="/">Preguntas</Link>
-                                            </SidebarMenuSubItem>
-                                            <SidebarMenuSubItem>
-                                                <Link href="/contact">Contacto</Link>
-                                            </SidebarMenuSubItem>
-                                        </SidebarMenuSub>
-                                    </CollapsibleContent>
-                                </SidebarMenuItem>
-                            </Collapsible>
-                        </SidebarMenu>
+                        <SidebarGroupContent>
+                            <SidebarMenu>
+                                <Collapsible className="group/collapsible">
+                                    <SidebarMenuItem>
+                                        <CollapsibleTrigger asChild>
+                                            <SidebarMenuButton >
+                                                Help
+                                                <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                                            </SidebarMenuButton >
+                                        </CollapsibleTrigger>
+                                        
+                                        <CollapsibleContent>
+                                            <SidebarMenuSub>
+                                                <SidebarMenuSubItem>
+                                                    <Link href="/">Questions</Link>
+                                                </SidebarMenuSubItem>
+                                                <SidebarMenuSubItem>
+                                                    <Link href="/contact">Contact</Link>
+                                                </SidebarMenuSubItem>
+                                                <SidebarMenuSubItem>
+                                                    <Link href="/grafics"></Link>
+                                                </SidebarMenuSubItem>
+                                            </SidebarMenuSub>
+                                        </CollapsibleContent>
+                                    </SidebarMenuItem>
+                                </Collapsible>
+                            </SidebarMenu>
+                        </SidebarGroupContent>
                     </SidebarGroupContent>
                 </SidebarGroup >
 
             </SidebarContent>
-            <SidebarFooter />
         </Sidebar>
     )
 }

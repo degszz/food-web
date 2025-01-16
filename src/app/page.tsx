@@ -99,64 +99,70 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col w-full  items-center h-full">
-        <div className="max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px]">
+
+        <div className="max-w-[280px] sm:max-w-[350px] md:max-w-[430px] lg:max-w-[670px] lg:min-w-[670px] xl:max-w-[750px] xl:min-w-[750px] ">
           <Carousel
             opts={{
               align: "start",
             }}
-            className="w-full pt-[10px]"
+            className="w-full pt-[20px]"
           >
-            <CarouselContent>
-              {data.map((item, index) => (
-                <CarouselItem key={index} className="basis-full md:basis-auto xl:basis-1/3">
-                  <a href={item.slug} className="">
-                    <Card className="bg-eat-50  shadow-none min-h-[70px] md:max-w-[300px] border-2 border-eat-900">
-                      <CardContent className="h-full w-full flex p-0 ">
+            <div >
 
-                        <div className="w-full min-h-[80px]">
-                          <img
-                            src={item.img}
-                            alt=""
-                            className="w-full h-full max-h-[80px] rounded-l-xl" />
-                        </div>
+              <CarouselPrevious />
 
-                        <div className="flex flex-col justify-center items-between w-full text-black text-center px-2">
-                          <span className="text-sm"><b>{item.text}</b></span>
-                          <div className="flex w-full justify-center">
+              <CarouselContent>
+                {data.map((item, index) => (
+                  <CarouselItem key={index} className="basis-full md:basis-auto xl:basis-1/3">
+                    <a href={item.slug} className="">
+                      <Card className="bg-eat-50  shadow-none min-h-[70px] md:max-w-[300px] border-2 border-eat-900">
+                        <CardContent className="h-full w-full flex p-0 ">
 
-                            <TooltipProvider>
-                              <Tooltip>
-                                <TooltipTrigger asChild>
-                                  <button className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800  rounded-full border-2 mx-[3px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full  icon icon-tabler icons-tabler-outline icon-tabler-caret-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 10l6 6l6 -6h-12" /></svg>
-                                  </button>
-                                </TooltipTrigger>
+                          <div className="w-full min-h-[80px]">
+                            <img
+                              src={item.img}
+                              alt=""
+                              className="w-full h-full max-h-[80px] rounded-l-xl" />
+                          </div>
 
-                                <TooltipContent className="mt-[15px]">
-                                  <div className="flex flex-col justify-center max-w-[150px]">
-                                    <span className="text-sm underline"><b>{item.title}</b></span>
-                                    <span className="text-sm">
-                                      {item.description}
-                                    </span>
-                                  </div>
-                                </TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
+                          <div className="flex flex-col justify-center items-between w-full text-black text-center px-2">
+                            <span className="text-sm"><b>{item.text}</b></span>
+                            <div className="flex w-full justify-center">
 
-                            <div className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800 rounded-full border-2 mx-[3px]">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full icon icon-tabler icons-tabler-outline icon-tabler-zoom-in"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M7 10l6 0" /><path d="M10 7l0 6" /><path d="M21 21l-6 -6" /></svg>
+                              <TooltipProvider>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                    <button className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800  rounded-full border-2 mx-[3px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full  icon icon-tabler icons-tabler-outline icon-tabler-caret-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 10l6 6l6 -6h-12" /></svg>
+                                    </button>
+                                  </TooltipTrigger>
+
+                                  <TooltipContent className="mt-[15px]">
+                                    <div className="flex flex-col justify-center max-w-[150px]">
+                                      <span className="text-sm underline"><b>{item.title}</b></span>
+                                      <span className="text-sm">
+                                        {item.description}
+                                      </span>
+                                    </div>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+
+                              <div className="hover:bg-eat-800 bg-eat-100 hover:border-none border-eat-800 rounded-full border-2 mx-[3px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="p-[5px] hover:stroke-white w-full h-full icon icon-tabler icons-tabler-outline icon-tabler-zoom-in"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M7 10l6 0" /><path d="M10 7l0 6" /><path d="M21 21l-6 -6" /></svg>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                      </CardContent>
-                    </Card>
-                  </a>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+                        </CardContent>
+                      </Card>
+                    </a>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselNext />
+            </div>
+
           </Carousel>
         </div>
         <div className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px] py-4 flex flex-col justify-center sm:justify-center items-center">

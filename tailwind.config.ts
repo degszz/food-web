@@ -9,6 +9,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			width: {
+				'calka': 'calc(100vw - 273px)',
+			},
 			height: {
 				'calc': 'calc(100vh - 50px)',
 				'calk': 'calc(100vh - 60px)',
