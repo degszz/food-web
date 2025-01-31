@@ -25,20 +25,7 @@ const Dashboard = [
         href: "/contact",
     },
 ]
-const Food = [
-    {
-        name: "Inicio",
-        href: "/",
-    },
-    {
-        name: "Contacto",
-        href: "/about",
-    },
-    {
-        name: "",
-        href: "/contact",
-    },
-]
+
 export default function Header() {
     return (
         <>
@@ -85,7 +72,6 @@ export default function Header() {
 
                     <div className="w-full">
                         <div className="flex items-center justify-center h-full">
-
                         </div>
                     </div>
 

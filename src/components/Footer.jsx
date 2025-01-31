@@ -21,7 +21,7 @@ export default function Footer() {
                             </h5>
                             <div className="my-4 lg:mb-0 ">
                                 <button
-                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover: bg-eat-300  text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover:border hover:border-eat-300 bg-eat-300  text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     type="button"
                                 >
                                     <a href="https://github.com/degszz" target="_blank">
@@ -29,7 +29,7 @@ export default function Footer() {
                                     </a>
                                 </button>
                                 <button
-                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover: bg-eat-300  text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover:border hover:border-eat-300 bg-eat-300  text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     type="button"
                                 >
                                     <a
@@ -39,7 +39,7 @@ export default function Footer() {
                                     </a>
                                 </button>
                                 <button
-                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover: bg-eat-300 text-pink-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full "
+                                    className="hover:scale-110 transition-all duration-200 ease-in-out scale-90 hover:bg-eat-800 hover:border-1 hover:border hover:border-eat-300 bg-eat-300 text-pink-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full "
                                     type="button"
                                 >
                                     <a href="https://www.instagram.com/z3maxi/" target="_blank">
