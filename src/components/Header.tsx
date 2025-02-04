@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <>
             <header
-                className="bg-eat-800 z-50  fixed top-0 text-white border-b border-eat-300  h-[50px] lg:h-[60px] w-full"
+                className="bg-eat-800 z-50  fixed top-0 text-white border-none  h-[50px] lg:h-[60px] w-full"
             >
                 <div className="w-full flex items-center justify-between h-full">
                     <div className="flex items-center pl-6 md:pl-4 justify-center  text-center h-full">

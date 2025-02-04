@@ -18,11 +18,11 @@ export default function Hero() {
                         </p>
                     </div>
 
-                    <div className="">
+                    <div className="pt-[15px]">
                         <button
                             className="bg-transparent mr-2 mb-2 px-2.5 py-1.5 z-50 font-medium text-center justify-center inline-flex items-center flex-row rounded-lg border gap-x-2 opacity-90 cursor-pointer hover:bg-eat-hover hover:text-white border-eat-800 text-eat-800 hover:opacity-100 hover:bg-eat-800 hover:scale-110 hover:shadow-lg dark:focus:ring-black-300 focus:ring-2 focus:outline-none focus:ring-black-30 transition-all duration-200 ease-in-out scale-90"
                         >
-                            <a href="https://www.linkedin.com/in/maximo-figuera-531231323/" target="_blank" className=" flex text-sm">
+                            <a href="https://www.linkedin.com/in/maximo-figuera-531231323/" target="_blank" className="flex text-sm">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
