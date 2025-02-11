@@ -18,17 +18,17 @@ export default {
 			},
 			colors: {
 				'eat': {
-					'50': '#f4f4f2',
-					'100': '#e4e2dd',
-					'200': '#cbc8bd',
-					'300': '#ada797',
-					'400': '#958e7a',
-					'500': '#7d7564',
-					'600': '#73695b',
-					'700': '#5d554b',
-					'800': '#514942',
-					'900': '#47403c',
-					'950': '#282320',
+					'50': '#f6f6f6',
+					'100': '#e7e7e7',
+					'200': '#d1d1d1',
+					'300': '#b0b0b0',
+					'400': '#858585',
+					'500': '#6d6d6d',
+					'600': '#5d5d5d',
+					'700': '#4f4f4f',
+					'800': '#454545',
+					'900': '#3d3d3d',
+					'950': '#262626',
 				},
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -82,7 +82,7 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
+				lg: '9.5px',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
