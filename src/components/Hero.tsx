@@ -64,7 +64,7 @@ export default function Hero() {
                         <div className='w-full py-4 h-full flex justify-center items-center'>
                             <img
                                 className={style.animacion}
-                                src='/3d.webp'
+                                src='/3d.avif'
                                 alt='Platillo 3d'
                             />
                         </div>

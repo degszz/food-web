@@ -83,7 +83,7 @@ export default function Home() {
     <>
       <div className="flex flex-col w-full items-center h-full">
 
-        <div className="max-w-[280px] sm:max-w-[350px] md:max-w-[430px] lg:max-w-[670px] lg:min-w-[670px] xl:max-w-[750px] xl:min-w-[750px] ">
+        <div className="max-w-[280px]  md:max-w-[430px] lg:max-w-[670px] lg:min-w-[670px] xl:max-w-[750px] xl:min-w-[750px]">
           <Carousel
             opts={{
               align: "start",
@@ -96,10 +96,10 @@ export default function Home() {
 
               <CarouselContent>
                 {data.map((item, index) => (
-                  <CarouselItem key={index} className="basis-full md:basis-auto xl:basis-1/3 py-4">
+                  <CarouselItem key={index} className="basis-full md:basis-1/2 xl:basis-1/3 py-4">
                     {/* <a href={item.slug} className=""> */}
-                    <Card className="bg-eat-100 min-h-[70px]  md:max-w-[300px] shadow-lg ">
-                      <CardContent className="h-full w-full flex p-0 ">
+                    <Card className="bg-white min-h-[70px] min-w-[200px] md:max-w-[250px] shadow-lg border-2 border-eat-600">
+                      <CardContent className="h-full w-full flex p-0">
 
                         <div className="w-full min-h-[80px]">
                           <Image
@@ -107,7 +107,7 @@ export default function Home() {
                             alt="Platillo"
                             width={100}
                             height={100}
-                            className="w-full h-full max-h-[80px] rounded-l-xl"
+                            className="w-full h-full max-h-[80px] rounded-l-lg"
                           />
                         </div>
 
@@ -125,7 +125,6 @@ export default function Home() {
 
                                 <TooltipContent className="bg-eat-800 mt-[10px]">
                                   <div className="flex flex-col justify-center max-w-[150px] bg-">
-                                    <span className="text-sm underline"><b>{item.title}</b></span>
                                     <span className="text-sm">
                                       <b>Ingredientes:</b><br />
                                       {item.description}
@@ -158,7 +157,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div className="w-full pb-[60px] z-50 max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px]">
+        <div className="w-full pb-[60px] z-30 max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px]">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>¿Puedo obtener las recetas de los platillos que sirven en el restaurante?</AccordionTrigger>

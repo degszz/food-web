@@ -25,6 +25,7 @@ const Dashboard = [
         href: "/contact",
     },
 ]
+import NavigationMenuu from "./NavigationMenu"
 
 export default function Header() {
     return (
@@ -38,7 +39,7 @@ export default function Header() {
                         {SHEET_SIDES.map((side) => (
                             <Sheet key={side} >
                                 <SheetTrigger asChild>
-                                    <button className="flex md:hidden lg:hidden" >
+                                    <button className="flex md:hidden lg:hidden">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
                                     </button>
                                 </SheetTrigger>
@@ -46,15 +47,7 @@ export default function Header() {
                                     <SheetTitle className="text-white">MENU</SheetTitle>
                                     <SheetDescription className="text-white">
                                         <ul className="w-fit">
-                                            <li>
-                                                <Link
-                                                    href="/"
-                                                    className="hover:underline text-start btn block py-2 pl-3 text-white rounded md:bg-transparen md:py-1 hover:text-orange-500"
-                                                    aria-current="page"
-                                                >
-                                                    Home
-                                                </Link>
-                                            </li>
+                                            
                                         </ul>
                                     </SheetDescription>
                                     <div className="grid gap-4 py-4">
@@ -72,6 +65,7 @@ export default function Header() {
 
                     <div className="w-full">
                         <div className="flex items-center justify-center h-full">
+                            {/* <NavigationMenuu/> */}
                         </div>
                     </div>
 

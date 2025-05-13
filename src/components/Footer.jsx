@@ -9,7 +9,7 @@ export default function Footer() {
                 rel="stylesheet"
                 href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
             />
-            <footer class="bg-eat-800 w-full text-serif flex flex-col justify-between h-[300px] md:h-[250px]  text-eat-200  dark:bg-white border-t-2 border-eat-950" id="redes">
+            <footer class="bg-eat-800 w-full text-serif flex flex-col justify-between h-[300px] md:h-[250px]  text-eat-200  dark:bg-white border-t-2 border-eat-300" id="redes">
                 <div className="min-h-[150px] flex justify-center">
                     <div className="text-start lg:text-left max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[750px] lg:min-w-[750px]">
                         <div className="w-full py-6">
@@ -51,7 +51,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="h-[50px] w-full border-t-2 border-eat-950 flex justify-center items-center">
+                <div className="h-[50px] w-full border-t-2 border-eat-300 flex justify-center items-center">
                     <p>Copyright Carter Company©™</p>
                 </div>
             </footer>
