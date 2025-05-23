@@ -47,7 +47,7 @@ export default function Header() {
                                     <SheetTitle className="text-white">MENU</SheetTitle>
                                     <SheetDescription className="text-white">
                                         <ul className="w-fit">
-                                            
+
                                         </ul>
                                     </SheetDescription>
                                     <div className="grid gap-4 py-4">
@@ -69,8 +69,7 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <div
-                        className="flex basis-1/3  items-center justify-around  text-center h-full">
+                    <div className="flex basis-1/3  items-center justify-around  text-center h-full">
 
                     </div>
                 </div>
