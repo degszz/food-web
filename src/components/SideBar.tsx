@@ -70,7 +70,7 @@ export function AppSidebar() {
 
                     </SidebarMenuSub>
 
-                    <SidebarGroupLabel className="text-white text-sm">
+                    {/* <SidebarGroupLabel className="text-white text-sm">
                         <b>Menu</b>
                     </SidebarGroupLabel>
                     <SidebarMenuSub className="">
@@ -83,7 +83,7 @@ export function AppSidebar() {
                             <SidebarMenuSubButton />
                         </SidebarMenuSubItem>
 
-                    </SidebarMenuSub>
+                    </SidebarMenuSub> */}
                 </SidebarGroup >
 
 
